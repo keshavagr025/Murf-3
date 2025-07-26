@@ -1,35 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useRef } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar";
+import Home from "./components/home";
+import Footer from "./components/footer";
+import Login from "./pages/login";
+import Signup from "./pages/signup";
+import Dashboard from "./pages/dashboard";
+import NewDocument from "./pages/NewDocument";
+import Templates from "./pages/Templates";
+import Collaborate from "./pages/Collaborate";
+import Favorites from "./pages/Favorites";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const homeRef = useRef(null);
+  const footerRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <Navbar
+                onHomeClick={() => scrollToSection(homeRef)}
+                onFooterClick={() => scrollToSection(footerRef)}
+              />
+              <div ref={homeRef}>
+                <Home />
+              </div>
+              <div ref={footerRef}>
+                <Footer />
+              </div>
+            </div>
+          }
+        />
 
-export default App
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/new-document" element={<NewDocument />} />
+        <Route path="/templates" element={<Templates />} />
+        <Route path="/collaborate" element={<Collaborate />} />
+        <Route path="/favorites" element={<Favorites />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;
