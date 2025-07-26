@@ -200,7 +200,10 @@ const Dashboard = () => {
               <button className="p-3 text-gray-300 hover:text-white transition-all duration-300 hover:bg-white/10 rounded-xl backdrop-blur-sm group">
                 <Bell className="h-6 w-6 group-hover:animate-bounce" />
               </button>
-              <button className="p-3 text-gray-300 hover:text-white transition-all duration-300 hover:bg-white/10 rounded-xl backdrop-blur-sm group">
+              <button
+                onClick={() => navigate("/settings")}
+                className="p-3 text-gray-300 hover:text-white transition-all duration-300 hover:bg-white/10 rounded-xl backdrop-blur-sm group"
+              >
                 <Settings className="h-6 w-6 group-hover:rotate-90 transition-transform duration-300" />
               </button>
               <div className="flex items-center space-x-3 pl-4 border-l border-white/20">
@@ -229,57 +232,57 @@ const Dashboard = () => {
 
         {/* Quick Actions */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-  {[
-    {
-      icon: Plus,
-      title: "New Document",
-      desc: "Start from scratch",
-      color: "from-blue-500 to-purple-600",
-      link: "/new-document",
-    },
-    {
-      icon: FileText,
-      title: "Templates",
-      desc: "Pre-made designs",
-      color: "from-green-500 to-teal-600",
-      link: "/templates",
-    },
-    {
-      icon: Users,
-      title: "Collaborate",
-      desc: "Invite team members",
-      color: "from-orange-500 to-red-600",
-      link: "/collaborate",
-    },
-    {
-      icon: Star,
-      title: "Favorites",
-      desc: "Starred documents",
-      color: "from-purple-500 to-pink-600",
-      link: "/favorites",
-    },
-  ].map((item, index) => (
-    <Link
-      to={item.link}
-      key={index}
-      className="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-3xl hover:bg-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 transform perspective-1000 hover:rotateY-5"
-      style={{ animationDelay: `${index * 0.1}s` }}
-    >
-      <div
-        className={`w-12 h-12 rounded-2xl bg-gradient-to-r ${item.color} flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg`}
-      >
-        <item.icon className="h-6 w-6 text-white" />
-      </div>
-      <div className="text-left">
-        <div className="font-semibold text-white text-lg mb-1">
-          {item.title}
+          {[
+            {
+              icon: Plus,
+              title: "New Document",
+              desc: "Start from scratch",
+              color: "from-blue-500 to-purple-600",
+              link: "/new-document",
+            },
+            {
+              icon: FileText,
+              title: "Templates",
+              desc: "Pre-made designs",
+              color: "from-green-500 to-teal-600",
+              link: "/templates",
+            },
+            {
+              icon: Users,
+              title: "Collaborate",
+              desc: "Invite team members",
+              color: "from-orange-500 to-red-600",
+              link: "/collaborate",
+            },
+            {
+              icon: Star,
+              title: "Favorites",
+              desc: "Starred documents",
+              color: "from-purple-500 to-pink-600",
+              link: "/favorites",
+            },
+          ].map((item, index) => (
+            <Link
+              to={item.link}
+              key={index}
+              className="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-3xl hover:bg-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 transform perspective-1000 hover:rotateY-5"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div
+                className={`w-12 h-12 rounded-2xl bg-gradient-to-r ${item.color} flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg`}
+              >
+                <item.icon className="h-6 w-6 text-white" />
+              </div>
+              <div className="text-left">
+                <div className="font-semibold text-white text-lg mb-1">
+                  {item.title}
+                </div>
+                <div className="text-sm text-gray-300">{item.desc}</div>
+              </div>
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </Link>
+          ))}
         </div>
-        <div className="text-sm text-gray-300">{item.desc}</div>
-      </div>
-      <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-    </Link>
-  ))}
-</div>
 
         {/* AI Tools Section */}
         <div className="mb-12">
