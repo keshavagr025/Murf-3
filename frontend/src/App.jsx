@@ -1,5 +1,6 @@
+// App.jsx
 import React, { useRef } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
 import Footer from "./components/footer";
@@ -20,35 +21,33 @@ const App = () => {
   };
 
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              <Navbar
-                onHomeClick={() => scrollToSection(homeRef)}
-                onFooterClick={() => scrollToSection(footerRef)}
-              />
-              <div ref={homeRef}>
-                <Home />
-              </div>
-              <div ref={footerRef}>
-                <Footer />
-              </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div>
+            <Navbar
+              onHomeClick={() => scrollToSection(homeRef)}
+              onFooterClick={() => scrollToSection(footerRef)}
+            />
+            <div ref={homeRef}>
+              <Home />
             </div>
-          }
-        />
+            <div ref={footerRef}>
+              <Footer />
+            </div>
+          </div>
+        }
+      />
 
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/new-document" element={<NewDocument />} />
-        <Route path="/templates" element={<Templates />} />
-        <Route path="/collaborate" element={<Collaborate />} />
-        <Route path="/favorites" element={<Favorites />} />
-      </Routes>
-    </Router>
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/new-document" element={<NewDocument />} />
+      <Route path="/templates" element={<Templates />} />
+      <Route path="/collaborate" element={<Collaborate />} />
+      <Route path="/favorites" element={<Favorites />} />
+    </Routes>
   );
 };
 
