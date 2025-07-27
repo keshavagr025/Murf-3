@@ -42,7 +42,7 @@ const Navbar = ({ onHomeClick, onFooterClick }) => {
 
   const goToDashboard = () => {
     setIsMenuOpen(false);
-    navigate('/dashboard');
+    navigate('/login');
   };
 
   return (
@@ -63,7 +63,7 @@ const Navbar = ({ onHomeClick, onFooterClick }) => {
               <FileText className="h-6 w-6 text-white" />
             </div>
             <span className="text-2xl font-mono bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:to-purple-300 transition-all duration-300">
-              EduDocs
+              Docs.ai
             </span>
           </div>
 

@@ -13,6 +13,7 @@ import Collaborate from "./pages/Collaborate";
 import Favorites from "./pages/Favorites";
 import Settings from "./pages/settings";
 import Profile from "./pages/profile";
+import ChatBot from "./components/ChatBot";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -37,7 +38,9 @@ const App = () => {
             </div>
             <div ref={footerRef}>
               <Footer />
+
             </div>
+             <div className="fixed bottom-4 right-4 z-50"><ChatBot /></div>
           </div>
         }
       />
@@ -55,6 +58,7 @@ const App = () => {
       
       {/* Fallback route for any unmatched paths */}
     </Routes>
+   
   );
 };
 
