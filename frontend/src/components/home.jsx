@@ -100,9 +100,14 @@ const Home = () => {
                 </Link>
               </button>
 
-              <button className="group border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-full text-lg font-semibold hover:border-blue-500 hover:bg-blue-50 hover:text-blue-700 transition-all duration-300">
+              <a
+                href="https://www.youtube.com/watch?v=-Va1JpmG-oU"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-full text-lg font-semibold hover:border-blue-500 hover:bg-blue-50 hover:text-blue-700 transition-all duration-300"
+              >
                 Watch Demo
-              </button>
+              </a>
             </div>
 
             <div className="mt-12 flex items-center justify-center gap-8 text-sm text-gray-600">
