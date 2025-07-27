@@ -11,7 +11,8 @@ import NewDocument from "./pages/NewDocument";
 import Templates from "./pages/Templates";
 import Collaborate from "./pages/Collaborate";
 import Favorites from "./pages/Favorites";
-import Setting from "./components/setting";
+import Settings from "./pages/settings";
+import Profile from "./pages/profile";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -48,7 +49,9 @@ const App = () => {
       <Route path="/templates" element={<Templates />} />
       <Route path="/collaborate" element={<Collaborate />} />
       <Route path="/favorites" element={<Favorites />} />
-      <Route path="/settings" element={<Setting />} />
+      <Route path="/settings" element={<Settings />} />
+      
+      <Route path="/profile" element={<Profile />} />
       
       {/* Fallback route for any unmatched paths */}
     </Routes>
