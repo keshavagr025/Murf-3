@@ -62,20 +62,20 @@ const Home = () => {
               </div>
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
+            <h1 className="text-6xl md:text-8xl font-mano mb-6 leading-tight">
               <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
-                Edu_Docs
+                Docs'AI
               </span>
             </h1>
 
             <div className="h-16 mb-8">
-              <p className="text-2xl md:text-3xl text-gray-700 font-medium">
+              <p className="text-2xl md:text-3xl text-gray-700 font-mano">
                 {typingText}
                 <span className="animate-pulse">|</span>
               </p>
             </div>
 
-            <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-mono">
               The intelligent document editor powered by Google's AI. Write,
               collaborate, and create with features that adapt to your workflow.
             </p>
@@ -93,7 +93,7 @@ const Home = () => {
     transition-all duration-300 backdrop-blur-sm
   "
                 >
-                  <span className="flex items-center gap-2">
+                  <span className="flex items-center gap-2 font-mono">
                     Start Writing{" "}
                     <PenTool className="h-5 w-5 text-slate-900 group-hover:text-emerald-600 transition-colors" />
                   </span>
@@ -104,7 +104,7 @@ const Home = () => {
                 href="https://www.youtube.com/watch?v=-Va1JpmG-oU"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-full text-lg font-semibold hover:border-blue-500 hover:bg-blue-50 hover:text-blue-700 transition-all duration-300"
+                className="group border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-full text-lg font-mano hover:border-blue-500 hover:bg-blue-50 hover:text-blue-700 transition-all duration-300"
               >
                 Watch Demo
               </a>
@@ -112,15 +112,15 @@ const Home = () => {
 
             <div className="mt-12 flex items-center justify-center gap-8 text-sm text-gray-600">
               <span className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse font-mano "></div>
                 Free to use
               </span>
               <span className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse font-mano "></div>
                 Works offline
               </span>
               <span className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
+                <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse font-mano "></div>
                 AI-powered
               </span>
             </div>
@@ -132,10 +132,10 @@ const Home = () => {
       <section className="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-mano  text-gray-900 mb-4">
               Part of Google Workspace
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto font-mano ">
               Seamlessly integrated with Gmail, Drive, Meet, Calendar, and more
             </p>
           </div>
@@ -145,37 +145,37 @@ const Home = () => {
               <div className="w-16 h-16 bg-red-500 rounded-lg flex items-center justify-center mb-2">
                 <span className="text-white font-bold text-xl">G</span>
               </div>
-              <span className="text-sm text-gray-600">Gmail</span>
+              <span className="text-sm text-gray-600 font-mano ">Gmail</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center mb-2">
                 <span className="text-white font-bold text-xl">D</span>
               </div>
-              <span className="text-sm text-gray-600">Drive</span>
+              <span className="text-sm text-gray-600 font-mano ">Drive</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-green-500 rounded-lg flex items-center justify-center mb-2">
                 <span className="text-white font-bold text-xl">M</span>
               </div>
-              <span className="text-sm text-gray-600">Meet</span>
+              <span className="text-sm text-gray-600 font-mano ">Meet</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-purple-500 rounded-lg flex items-center justify-center mb-2">
                 <span className="text-white font-bold text-xl">C</span>
               </div>
-              <span className="text-sm text-gray-600">Calendar</span>
+              <span className="text-sm text-gray-600" font-mano >Calendar</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center mb-2">
                 <span className="text-white font-bold text-xl">S</span>
               </div>
-              <span className="text-sm text-gray-600">Sheets</span>
+              <span className="text-sm text-gray-600 font-mano ">Sheets</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-orange-500 rounded-lg flex items-center justify-center mb-2">
                 <span className="text-white font-bold text-xl">S</span>
               </div>
-              <span className="text-sm text-gray-600">Slides</span>
+              <span className="text-sm text-gray-600 font-mano ">Slides</span>
             </div>
           </div>
         </div>
@@ -185,10 +185,10 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-mano  text-gray-900 mb-6">
               Intelligent Writing Features
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-mano ">
               Experience the power of Google's AI and machine learning built
               right into your documents
             </p>
@@ -200,14 +200,14 @@ const Home = () => {
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                 <Brain className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-mano  text-gray-900 mb-4">
                 Smart Compose
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4 font-mano ">
                 AI-powered writing suggestions help you compose documents faster
                 with contextually relevant content.
               </p>
-              <div className="text-sm text-blue-600 font-medium">
+              <div className="text-sm text-blue-600 font-mano ">
                 ✨ Powered by Google AI
               </div>
             </div>
@@ -217,14 +217,14 @@ const Home = () => {
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                 <Mic className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 font-mano ">
                 Voice Typing
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4 font-mano ">
                 Speak naturally and watch your words appear on screen with 99%
                 accuracy in 60+ languages.
               </p>
-              <div className="text-sm text-purple-600 font-medium">
+              <div className="text-sm text-purple-600 font-medium font-mano ">
                 🎤 60+ Languages
               </div>
             </div>
@@ -232,16 +232,16 @@ const Home = () => {
             {/* Live Translate */}
             <div className="group bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 hover:shadow-2xl hover:scale-105 transition-all duration-500 border border-green-200">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                <Globe className="h-8 w-8 text-white" />
+                <Globe className="h-8 w-8 text-white font-mano " />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 font-mano ">
                 Live Translate
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4 font-mano ">
                 Instantly translate your documents into 100+ languages while
                 preserving formatting and context.
               </p>
-              <div className="text-sm text-green-600 font-medium">
+              <div className="text-sm text-green-600 font-medium font-mano ">
                 🌍 100+ Languages
               </div>
             </div>
@@ -249,16 +249,16 @@ const Home = () => {
             {/* Smart Search */}
             <div className="group bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl p-8 hover:shadow-2xl hover:scale-105 transition-all duration-500 border border-orange-200">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                <Search className="h-8 w-8 text-white" />
+                <Search className="h-8 w-8 text-white font-mano " />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 font-mano ">
                 Explore Research
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4 font-mano ">
                 Find reliable sources, images, and citations directly from
                 Google Search without leaving your document.
               </p>
-              <div className="text-sm text-orange-600 font-medium">
+              <div className="text-sm text-orange-600 font-mano ">
                 📚 Instant Research
               </div>
             </div>
@@ -271,7 +271,7 @@ const Home = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Smart Suggestions
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4 font-mano ">
                 Get intelligent suggestions for grammar, style, and tone to make
                 your writing more effective.
               </p>
@@ -285,14 +285,14 @@ const Home = () => {
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-2xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                 <Smartphone className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 font-mano ">
                 Mobile Optimized
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4 font-mano ">
                 Full editing capabilities on any device with offline sync and
                 touch-optimized interface.
               </p>
-              <div className="text-sm text-indigo-600 font-medium">
+              <div className="text-sm text-indigo-600 font-medium font-mano ">
                 📱 Works Offline
               </div>
             </div>
@@ -308,7 +308,7 @@ const Home = () => {
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
                 Collaborate Like Never Before
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-gray-600 mb-8 font-mano ">
                 See changes as they happen, leave contextual comments, and work
                 together seamlessly from anywhere in the world.
               </p>
@@ -322,7 +322,7 @@ const Home = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       Live Cursors
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 font-mano ">
                       See exactly where your teammates are working in real-time
                       with colored cursors and selections.
                     </p>
@@ -337,7 +337,7 @@ const Home = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       Smart Comments
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 font-mano ">
                       Add contextual comments that follow your text and get
                       AI-powered suggestion responses.
                     </p>
@@ -352,7 +352,7 @@ const Home = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       Granular Permissions
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 font-mano ">
                       Control exactly what each person can do - view, comment,
                       suggest, or edit with enterprise-grade security.
                     </p>
@@ -369,7 +369,7 @@ const Home = () => {
                     <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                   </div>
-                  <div className="text-sm text-gray-600 ml-4">
+                  <div className="text-sm text-gray-600 ml-4 font-mano ">
                     Project Proposal.docx
                   </div>
                 </div>
@@ -387,7 +387,7 @@ const Home = () => {
                           C
                         </div>
                       </div>
-                      <div className="text-sm text-gray-600">
+                      <div className="text-sm text-gray-600 font-mano ">
                         3 people editing
                       </div>
                       <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
@@ -410,7 +410,7 @@ const Home = () => {
                     </div>
 
                     <div className="mt-6 p-3 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-                      <div className="text-sm text-yellow-800">
+                      <div className="text-sm text-yellow-800 font-mano ">
                         💡 Sarah suggested: "Consider adding market analysis
                         here"
                       </div>
@@ -427,10 +427,10 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4 font-mano ">
               Trusted by Millions Worldwide
             </h2>
-            <p className="text-blue-100">
+            <p className="text-blue-100 font-mano ">
               Real numbers from real users who rely on Google Docs every day
             </p>
           </div>
@@ -440,29 +440,29 @@ const Home = () => {
               <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-200 to-white bg-clip-text text-transparent">
                 3B+
               </div>
-              <p className="text-lg text-blue-100">Documents Created</p>
-              <p className="text-sm text-blue-200 mt-1">Every Month</p>
+              <p className="text-lg text-blue-100 font-mano ">Documents Created</p>
+              <p className="text-sm text-blue-200 mt-1 font-mano ">Every Month</p>
             </div>
             <div className="text-white">
               <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-green-200 to-white bg-clip-text text-transparent">
                 99.9%
               </div>
-              <p className="text-lg text-blue-100">Uptime Guarantee</p>
-              <p className="text-sm text-blue-200 mt-1">Enterprise SLA</p>
+              <p className="text-lg text-blue-100 font-mano ">Uptime Guarantee</p>
+              <p className="text-sm text-blue-200 mt-1 font-mano ">Enterprise SLA</p>
             </div>
             <div className="text-white">
               <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-purple-200 to-white bg-clip-text text-transparent">
                 6M+
               </div>
-              <p className="text-lg text-blue-100">Organizations</p>
-              <p className="text-sm text-blue-200 mt-1">Using Workspace</p>
+              <p className="text-lg text-blue-100 font-mano ">Organizations</p>
+              <p className="text-sm text-blue-200 mt-1 font-mano ">Using Workspace</p>
             </div>
             <div className="text-white">
               <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-pink-200 to-white bg-clip-text text-transparent">
                 170+
               </div>
-              <p className="text-lg text-blue-100">Countries</p>
-              <p className="text-sm text-blue-200 mt-1">Supported</p>
+              <p className="text-lg text-blue-100 font-mano ">Countries</p>
+              <p className="text-sm text-blue-200 mt-1 font-mano ">Supported</p>
             </div>
           </div>
         </div>
@@ -486,21 +486,29 @@ const Home = () => {
                 </span>
               </h2>
 
-              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto font-mano ">
                 Join over 3 billion users who trust Google Docs for their most
                 important documents. It's free, powerful, and ready when you
                 are.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-                <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 relative overflow-hidden">
+                <Link
+                  to="/login"
+                  className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 relative overflow-hidden inline-block text-center"
+                >
                   <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   <span className="relative">Create Your First Doc</span>
-                </button>
+                </Link>
 
-                <button className="text-blue-600 hover:text-purple-600 font-semibold text-lg transition-colors duration-300">
+                <a
+                  href="https://murf.ai/api/docs/introduction/overview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-purple-600 font-semibold text-lg transition-colors duration-300"
+                >
                   Learn More →
-                </button>
+                </a>
               </div>
 
               <div className="flex items-center justify-center gap-6 text-sm text-gray-500">

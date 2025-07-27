@@ -184,7 +184,7 @@ const Templates = () => {
         <div className="mb-12">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h1 className="text-4xl font-bold bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent mb-3">
+              <h1 className="text-4xl font-mano bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent mb-3">
                 Document Templates
               </h1>
               <p className="text-xl text-gray-300">

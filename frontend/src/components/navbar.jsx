@@ -62,7 +62,7 @@ const Navbar = ({ onHomeClick, onFooterClick }) => {
             <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
               <FileText className="h-6 w-6 text-white" />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:to-purple-300 transition-all duration-300">
+            <span className="text-2xl font-mono bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:to-purple-300 transition-all duration-300">
               EduDocs
             </span>
           </div>
@@ -95,7 +95,7 @@ const Navbar = ({ onHomeClick, onFooterClick }) => {
                 className="flex items-center space-x-2 px-6 py-2 rounded-full text-white hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-600 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <ArrowDown className="h-4 w-4" />
-                <span className="font-medium">Footer</span>
+                <span className="font-medium">Contacts</span>
               </button>
             </div>
           </div>
