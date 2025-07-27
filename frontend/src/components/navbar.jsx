@@ -77,7 +77,7 @@ const Navbar = ({ onHomeClick, onFooterClick }) => {
                 className="flex items-center space-x-2 px-6 py-2 rounded-full text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <Home className="h-4 w-4" />
-                <span className="font-medium">Home</span>
+                <span className="font-mano">Home</span>
               </button>
 
               {/* Dashboard */}
@@ -86,7 +86,7 @@ const Navbar = ({ onHomeClick, onFooterClick }) => {
                 className="flex items-center space-x-2 px-6 py-2 rounded-full text-white hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <LayoutDashboard className="h-4 w-4" />
-                <span className="font-medium">Dashboard</span>
+                <span className="font-mano">Dashboard</span>
               </button>
 
               {/* Footer */}
@@ -95,7 +95,7 @@ const Navbar = ({ onHomeClick, onFooterClick }) => {
                 className="flex items-center space-x-2 px-6 py-2 rounded-full text-white hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-600 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <ArrowDown className="h-4 w-4" />
-                <span className="font-medium">Contacts</span>
+                <span className="font-mano">Contacts</span>
               </button>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Navbar = ({ onHomeClick, onFooterClick }) => {
               onClick={goToLogin}
               className="flex items-center space-x-2 px-6 py-2 rounded-full border-2 border-gray-400 text-gray-300 hover:border-blue-400 hover:text-blue-400 hover:bg-blue-400/10 transition-all duration-300 hover:scale-105 hover:shadow-lg font-medium"
             >
-              <LogIn className="h-4 w-4" />
+              <LogIn className="h-4 w-4 font-mano" />
               <span>Login</span>
             </button>
 
@@ -114,7 +114,7 @@ const Navbar = ({ onHomeClick, onFooterClick }) => {
               onClick={goToSignup}
               className="flex items-center space-x-2 px-6 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl font-medium"
             >
-              <UserPlus className="h-4 w-4" />
+              <UserPlus className="h-4 w-4 font-mano" />
               <span>Sign Up</span>
             </button>
           </div>
